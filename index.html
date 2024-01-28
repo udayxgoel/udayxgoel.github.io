@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Coming Soon</h1>
+        <p>We are working on something awesome! Stay tuned for updates.</p>
+        <div class="countdown">
+            <p id="demo"></p>
+        </div>
+    </div>
+
+    <script>
+        // Automatically link CSS and JS files
+        document.addEventListener("DOMContentLoaded", function() {
+            var head = document.head || document.getElementsByTagName('head')[0];
+
+            // Link styles.css
+            var linkCss = document.createElement('link');
+            linkCss.rel = 'stylesheet';
+            linkCss.href = 'styles.css';
+            head.appendChild(linkCss);
+
+            // Link countdown.js
+            var scriptJs = document.createElement('script');
+            scriptJs.src = 'countdown.js';
+            head.appendChild(scriptJs);
+        });
+    </script>
+</body>
+</html>
